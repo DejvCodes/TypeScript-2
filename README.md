@@ -1,5 +1,5 @@
 ## Advanced TypeScript
 • Course - David Šetek 
 
-## 🔐 License 
+## 🔐 License
 [MIT License](LICENSE)
