@@ -1,4 +1,4 @@
-## Advanced TypeScript
+## TypeScript
 • Course - David Šetek 
 
 ## 🔐 License
