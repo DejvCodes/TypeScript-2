@@ -15,3 +15,4 @@ Podpora OOP	   ->   • omezená	                               • silnější 
 Nástroje	     ->   • základní	                             • výborná integrace s VS Code, IntelliSense, refaktoring
 Výstup	       ->   • spouští se přímo v prohlížeči	         • kompiluje se do čistého JavaScriptu
 */
+ 

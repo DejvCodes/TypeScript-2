@@ -18,6 +18,6 @@
 • npm install --save-dev typescript
 
 6. Přeložení TypeScriptu do JavaScriptu
-• npx tsc
-• npx tsc -w (sledovat)
-*/
+• tsc script.ts
+• tsc -w script.ts (sledovat)
+*/ 
