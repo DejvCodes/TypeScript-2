@@ -11,6 +11,7 @@ Kdy má any smysl?
 • když pracuješ s neznámým externím kódem nebo knihovnou, která nemá typy
 • když rychle prototypuješ a typy tě brzdí
 */
+
 let something: any = 'David';
 something = 40;
 something = true;
