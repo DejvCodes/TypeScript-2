@@ -4,4 +4,4 @@ const student = {
 }
 
 // console.log(student.firstNamaaes) // static checking - upozorní na chybu
-console.log(student.firstName)
+console.log(student.firstName);
