@@ -7,7 +7,6 @@ Jednoduše řečeno
 • každý platný JS kód je zároveň platný TypeScriptový kód, ale ne naopak – TypeScript přidává 
   navíc hlavně statické typování a nástroje pro lepší kontrolu chyb už při psaní kódu
 
-
 Funkce	       ->   JavaScript	                             TypeScript
 Typování	     ->   • dynamické (typy se určují až za běhu)	 • statické (typy se kontrolují při kompilaci)
 Kontrola chyb  ->   • až při spuštění	                       • už při psaní/kompilaci
