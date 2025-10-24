@@ -8,7 +8,7 @@ var square = function (num) {
     return num * num;
 };
 console.log(square(5)); // 25
-// 2.Funkce s návratovým typem "string"
+// 2. Funkce s návratovým typem "string"
 var greet = function (name) {
     return "Ahoj, ".concat(name, "!");
 };
@@ -37,36 +37,34 @@ var errorFunction = function (errorText) {
     throw new Error(errorText);
 };
 // console.log(errorFunction('chyba!')); // Uncaught Error: chyba!
-console.log('----------------------');
-// 5️⃣ Automatické odvození návratového typu (type inference)
-function multiply(a, b) {
+// 6. Automatické odvození návratového typu (type inference)
+var multiply = function (a, b) {
     return a * b; // TS automaticky pozná, že vrací "number"
-}
-var result = multiply(4, 2); // ✅ number
-// 6️⃣ Funkce vracející více možností (union type)
-function getStatus(success) {
-    return success ? "OK" : 500;
-}
-var status = getStatus(true); // ✅ "OK" nebo 500
-// 7️⃣ Funkce vracející objekt (ručně typovaný)
-function createUser(name, age) {
+};
+console.log(multiply(5, 5)); // 25
+// 7. Funkce vracející více možností (union type)
+var getStatus = function (success) {
+    return success ? 'OK' : 500;
+};
+console.log(getStatus(true)); // "OK" nebo 500
+// 8. Funkce vracející objekt (ručně typovaný)
+var createUser = function (name, age) {
     return { name: name, age: age };
-}
-var user1 = createUser("David", 23);
-function makeUser(name, age) {
+};
+console.log(createUser('David', 23)); // {name: 'David', age: 23}
+var makeUser = function (name, age) {
     return { name: name, age: age };
-}
-var user2 = makeUser("Petr", 30);
-// 9️⃣ Funkce s výchozí hodnotou parametru
-function greetUser(name) {
-    if (name === void 0) { name = "návštěvníku"; }
+};
+console.log(makeUser('Dejv', 23)); // {name: 'Dejv', age: 23}
+// 10. Funkce s výchozí hodnotou parametru
+var greetUser = function (name) {
+    if (name === void 0) { name = 'návštěvník'; }
     return "Ahoj, ".concat(name, "!");
-}
-console.log(greetUser()); // "Ahoj, návštěvníku!"
-console.log(greetUser("Dejv")); // "Ahoj, Dejv!"
-// 🔟 Funkce s volitelným parametrem (?)
-function sayHello(name) {
+};
+console.log(greetUser()); // Ahoj, návštěvník!
+// 11. Funkce s volitelným parametrem (?)
+var sayHello = function (name) {
     return name ? "Ahoj, ".concat(name, "!") : "Ahoj!";
-}
+};
 console.log(sayHello()); // "Ahoj!"
 console.log(sayHello("David")); // "Ahoj, David!"

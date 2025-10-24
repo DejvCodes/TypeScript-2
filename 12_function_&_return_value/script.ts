@@ -10,9 +10,9 @@ const square = (num: number): number => {
 }
 console.log(square(5)); // 25
 
-// 2.Funkce s návratovým typem "string"
+// 2. Funkce s návratovým typem "string"
 const greet = (name: string): string => {
-  return `Ahoj, ${name}!`;
+    return `Ahoj, ${name}!`;
 }
 console.log(greet('Dejv')); // Ahoj, Dejv!
 
@@ -25,7 +25,7 @@ logMessage('Zpráva');
 const showMessage = (message: string): void => {
     const output = document.querySelector('h1') as HTMLElement;
     if (output) {
-      output.textContent = message; // h1 bude mít text Nadpis
+        output.textContent = message; // h1 bude mít text Nadpis
     }
 }
 showMessage('Nadpis');
@@ -44,52 +44,41 @@ const errorFunction = (errorText: string): never => {
 }
 // console.log(errorFunction('chyba!')); // Uncaught Error: chyba!
 
-
-
-
-console.log('----------------------')
-
-// 5️⃣ Automatické odvození návratového typu (type inference)
-function multiply(a: number, b: number) {
-  return a * b; // TS automaticky pozná, že vrací "number"
+// 6. Automatické odvození návratového typu (type inference)
+const multiply = (a: number, b: number) => {
+    return a * b; // TS automaticky pozná, že vrací "number"
 }
-const result = multiply(4, 2); // ✅ number
+console.log(multiply(5, 5)); // 25
 
-
-// 6️⃣ Funkce vracející více možností (union type)
-function getStatus(success: boolean): string | number {
-  return success ? "OK" : 500;
+// 7. Funkce vracející více možností (union type)
+const getStatus = (success: boolean): string | number => {
+    return success ? 'OK' : 500;
 }
-const status = getStatus(true); // ✅ "OK" nebo 500
+console.log(getStatus(true)); // "OK" nebo 500
 
-
-// 7️⃣ Funkce vracející objekt (ručně typovaný)
-function createUser(name: string, age: number): { name: string; age: number } {
-  return { name, age };
+// 8. Funkce vracející objekt (ručně typovaný)
+const createUser = (name: string, age: number): {name: string; age: number} => {
+    return { name, age };
 }
-const user1 = createUser("David", 23);
+console.log(createUser('David', 23)); // {name: 'David', age: 23}
 
-
-// 8️⃣ Funkce vracející objekt pomocí vlastního typu
+// 9. Funkce vracející objekt pomocí vlastního typu
 type User = { name: string; age: number };
 
-function makeUser(name: string, age: number): User {
-  return { name, age };
+const makeUser = (name: string, age: number): User => {
+    return { name, age };
 }
-const user2 = makeUser("Petr", 30);
+console.log(makeUser('Dejv', 23)); // {name: 'Dejv', age: 23}
 
-
-// 9️⃣ Funkce s výchozí hodnotou parametru
-function greetUser(name: string = "návštěvníku"): string {
-  return `Ahoj, ${name}!`;
+// 10. Funkce s výchozí hodnotou parametru
+const greetUser = (name: string = 'návštěvník'): string => {
+    return `Ahoj, ${name}!`;
 }
-console.log(greetUser());      // "Ahoj, návštěvníku!"
-console.log(greetUser("Dejv")); // "Ahoj, Dejv!"
+console.log(greetUser()); // Ahoj, návštěvník!
 
-
-// 🔟 Funkce s volitelným parametrem (?)
-function sayHello(name?: string): string {
-  return name ? `Ahoj, ${name}!` : "Ahoj!";
+// 11. Funkce s volitelným parametrem (?)
+const sayHello = (name?: string): string => {
+    return name ? `Ahoj, ${name}!` : "Ahoj!";
 }
-console.log(sayHello());      // "Ahoj!"
+console.log(sayHello()); // "Ahoj!"
 console.log(sayHello("David")); // "Ahoj, David!"
