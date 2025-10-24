@@ -6,7 +6,7 @@
 2. Instalace TypeScriptu
 • npm install -g typescript
 
-3. Ověření instalace
+3. Ověření instalace (verze)
 • tsc -v
 
 4. Vytvoření nového projektu

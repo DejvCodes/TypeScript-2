@@ -1,7 +1,7 @@
 /*
 Funkce v TypeScriptu
-• v TypeScriptu můžeš typovat vstupní parametry i návratovou hodnotu
-• tím zajistíš, že funkce bude volána správně a vracet očekávaný typ
+• v TypeScriptu můžeme typovat vstupní parametry i návratovou hodnotu
+• tím zajistíme, že funkce bude volána správně a vracet očekávaný typ
 
 | Prvek              | Příklad           | Význam                     |
 | ------------------ | ----------------- | -------------------------- |

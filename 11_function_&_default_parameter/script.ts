@@ -1,7 +1,7 @@
 /*
 Funkce a výchozí (defaultní) parametry v TS
-• ve funkci můžeš nastavit výchozí hodnotu parametru
-• pokud při volání funkce ten parametr nepředáš, TypeScript použije tu výchozí hodnotu
+• ve funkci můžeme nastavit výchozí hodnotu parametru
+• pokud při volání funkce ten parametr nepředáme, TypeScript použije tu výchozí hodnotu
 */
 const crimeDescription = (
     firstName: string, // = 'nezadáno', 

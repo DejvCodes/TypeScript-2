@@ -1,15 +1,15 @@
 /*
 Datový typ any
 • any znamená doslova -> libovolný typ
-• když proměnnou označíš jako any, TypeScript vypne kontrolu typů — můžeš 
+• když proměnnou označíme jako any, TypeScript vypne kontrolu typů — můžeme 
   do ní přiřadit cokoli a dělat s ní cokoli, bez chyb
 
 Nevýhoda any!
-• použitím any přicházíš o všechny výhody TS — ztrácíš typovou bezpečnost
+• použitím any přicházímé o všechny výhody TS — ztrácíme typovou bezpečnost
 
 Kdy má any smysl?
-• když pracuješ s neznámým externím kódem nebo knihovnou, která nemá typy
-• když rychle prototypuješ a typy tě brzdí
+• když pracujeme s neznámým externím kódem nebo knihovnou, která nemá typy
+• když rychle prototypujeme a typy nás brzdí
 */
 
 let something: any = 'David';
