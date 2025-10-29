@@ -43,4 +43,4 @@ var clearNumber = function (price) {
     return price;
 };
 console.log(clearNumber(100)); // 100
-console.log(clearNumber('$100')); // 100
+console.log(clearNumber('$100')); // 100 
