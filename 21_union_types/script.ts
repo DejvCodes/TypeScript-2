@@ -55,7 +55,7 @@ console.log(allResults);
 
 // Union types - praktické využití
 const clearNumber = (price: number | string): number => {
-    if (typeof price === 'string') {
+    if (typeof(price) === 'string') {
         const newPrice = parseFloat(price.replace('$', ''));
         return newPrice;
     }

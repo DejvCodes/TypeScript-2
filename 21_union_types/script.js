@@ -36,7 +36,7 @@ console.log(allResults);
 // {firstPart: 90, secondPart: 65, thirdPart: 80}
 // Union types - praktické využití
 var clearNumber = function (price) {
-    if (typeof price === 'string') {
+    if (typeof (price) === 'string') {
         var newPrice = parseFloat(price.replace('$', ''));
         return newPrice;
     }
