@@ -50,4 +50,4 @@ if (isImageElement(imgTag)) {
     console.log(`Máme input ${imgTag.value}`);
 } else {
     console.error('Neznámý typ prvku.');
-}
+} 
