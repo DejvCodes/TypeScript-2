@@ -1,6 +1,6 @@
 /*
 Funkce a contextual typing (kontextové typování)
-• typeScript umí odvodit typ funkce na základě KONTEKSTU
+• typeScript umí odvodit typ funkce na základě KONTEXTU
 • tedy podle toho, kde a jak je funkce použita
 
 • TypeScript pozná typ parametru nebo návratové hodnoty podle kontextu, 
