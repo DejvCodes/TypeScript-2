@@ -86,9 +86,8 @@ This repository contains 31 hands-on lessons progressing from TypeScript fundame
 2. Navigate to a specific topic: <br>
    • `cd 01_what_is_TS` or any numbered directory <br>
 3. Compile and run TypeScript files: <br>
-   • `tsc script.ts` (compile to JavaScript) <br>
-   • `node script.js` (run compiled code) <br>
-   • or use `ts-node script.ts` for direct execution <br>
+   • `tsc script.ts` to compile individual files <br>
+   • or use `tsc --watch` for automatic compilation <br>
 
 ## 💻 Tech Stack
 [![My Skills](https://skillicons.dev/icons?i=typescript,nodejs)](https://skillicons.dev)
