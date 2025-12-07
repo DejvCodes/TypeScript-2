@@ -1,5 +1,5 @@
 ## TypeScript - Advanced Concepts & Deep Dive
-A comprehensive TypeScript learning repository covering type systems, advanced patterns, and object-oriented programming. <br>
+A comprehensive TypeScript learning repository covering type systems, advanced patterns, and object-oriented programming. 
 This repository contains 31 hands-on lessons progressing from TypeScript fundamentals to advanced OOP concepts and real-world projects.
 
 ## 🚀 Features
